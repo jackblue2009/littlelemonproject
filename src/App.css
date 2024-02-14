@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+header img {
+    margin-left: 4rem;
+}
+
+header nav {
+    margin: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 2rem;
+}
+
+main .headline {
+    background-color: #333333;
+}
+
+main .headline .row {
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .headline .row section {
+    display: inline-block;
+    width: 50%;
+}
