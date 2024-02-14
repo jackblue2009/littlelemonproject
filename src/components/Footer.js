@@ -35,28 +35,20 @@ function Footer() {
                  alt='restaurant-indoor'
                  width='400'
             />
-            <table>
-                <thead>
-                    <tr>
-                        { footLinks.map((item, index) => {
-                            <th key={index}>{item.title}</th>
-                        }) }
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        { footLinks.map((item, index) => {
-                            <td key={index}>
-                                <ul>
-                                    { item.list.map((listItem, listIndex) => {
-                                        <li key={listIndex}>{listItem}</li>
-                                    }) }
-                                </ul>
-                            </td>
-                        }) }
-                    </tr>
-                </tbody>
-            </table>
+            {footLinks.map((item, index) => {
+                return (
+                    <div className='footer-section' key={index}>
+                        <h3>{item.title}</h3>
+                        <ul>
+                            {item.list.map((listItem, listIndex) => {
+                                return (
+                                    <li>{listItem}</li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                );
+            })}
         </footer>
     );
 }
