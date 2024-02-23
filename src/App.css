@@ -27,6 +27,17 @@ header nav ul li {
     margin-left: 2rem;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 main .headline {
     background-color: #333333;
 }
@@ -34,12 +45,16 @@ main .headline {
 main .headline .row {
     width: 50%;
     margin: 0 auto;
+    display: flex;
 }
 
 main .headline .row section {
-    display: inline-block;
     width: 50%;
     height: 10vh;
+}
+
+main .headline .row section:first-child {
+    padding: 3.5rem;
 }
 
 main .headline .row section h2 {
@@ -49,4 +64,34 @@ main .headline .row section h2 {
 main .headline .row section sub,
 main .headline .row section p {
     color: #FFFFFF;
+}
+
+main .top-specials {
+    padding: 3rem 1rem;
+}
+
+main .top-specials .special-list {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .top-specials .special-list .special-item {
+    background-color: rgba(51, 51, 51, 0.4);
+    width: 150px;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 2rem;
+}
+
+main .top-specials .special-list .special-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+}
+
+main .top-specials .special-list .special-item .price {
+    color: #F4CE14;
+    text-decoration: underline;
+    font-weight: bold;
 }

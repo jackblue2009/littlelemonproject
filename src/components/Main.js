@@ -1,5 +1,7 @@
 import headlineImg from '../images/restauranfood.jpg'
 
+import Specials from './Specials';
+
 function Main() {
     return (
         <main>
@@ -20,6 +22,7 @@ function Main() {
                     </section>
                 </div>
             </div>
+            <Specials />
         </main>
     );
 }
