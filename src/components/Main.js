@@ -14,7 +14,8 @@ function Main() {
                         <img
                             src={headlineImg}
                             alt='headline-image-showing-restaurant-food'
-                            width='150'
+                            width='200'
+                            height='200'
                         />
                     </section>
                 </div>

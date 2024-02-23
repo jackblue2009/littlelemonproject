@@ -39,4 +39,14 @@ main .headline .row {
 main .headline .row section {
     display: inline-block;
     width: 50%;
+    height: 10vh;
+}
+
+main .headline .row section h2 {
+    color: #F4CE14;
+}
+
+main .headline .row section sub,
+main .headline .row section p {
+    color: #FFFFFF;
 }
