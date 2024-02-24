@@ -1,10 +1,9 @@
 import headlineImg from '../images/restauranfood.jpg'
 
 import Specials from './Specials';
-import Testimony from './Testimony';
-import About from './About';
-
-function Main() {
+import CustomerSay from './CustomerSay';
+import Chicago from './Chicago';
+function Homepage() {
     return (
         <main>
             <div className="headline">
@@ -27,10 +26,10 @@ function Main() {
                 </div>
             </div>
             <Specials />
-            <Testimony />
-            <About />
+            <CustomerSay />
+            <Chicago />
         </main>
     );
 }
 
-export default Main;
+export default Homepage;

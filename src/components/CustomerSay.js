@@ -1,6 +1,6 @@
 import userImg from "../images/profile.png";
 
-function Testimony() {
+function CustomerSay() {
     const testimonies = [
         {
             title: "Rating",
@@ -42,4 +42,4 @@ function Testimony() {
     );
 }
 
-export default Testimony;
+export default CustomerSay;

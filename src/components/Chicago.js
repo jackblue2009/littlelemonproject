@@ -1,7 +1,7 @@
 import aboutImg1 from "../images/Mario and Adrian A.jpg";
 import aboutImg2 from "../images/Mario and Adrian b.jpg";
 
-function About() {
+function Chicago() {
     return (
         <div className="about-section">
             <section>
@@ -19,4 +19,4 @@ function About() {
     );
 }
 
-export default About;
+export default Chicago;
