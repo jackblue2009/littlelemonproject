@@ -175,6 +175,12 @@ main .about-section section img:last-child {
     z-index: 2;
 }
 
+.booking-page form {
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
+}
+
 footer {
     width: 100%;
     background-color: rgba(41, 41, 41, 0.2);
