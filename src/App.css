@@ -8,7 +8,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 header img {
@@ -68,13 +68,21 @@ main .headline .row section p {
     color: #FFFFFF;
 }
 
-main .headline .row section button {
+main .headline .row section a {
+    display: block;
+    width: 15rem;
+    text-align: center;
+    text-decoration: none;
     background-color: #F4CE14;
     padding: 0.7rem;
     border-radius: 20px;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+main .headline .row section a:hover {
+    box-shadow: 5px 5px 5px 2px #c3c3c3;
 }
 
 main .headline .row section img {
