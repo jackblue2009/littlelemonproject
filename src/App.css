@@ -4,6 +4,7 @@
 }
 
 header {
+    width: 100%;
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -39,6 +40,7 @@ header nav ul li a:hover {
 }
 
 main .headline {
+    width: 100%;
     background-color: #333333;
 }
 
@@ -153,10 +155,64 @@ main .about-section section {
     padding: 1rem;
 }
 
+main .about-section section span {
+    font-style: italic;
+}
+
 main .about-section section img {
     position: relative;
 }
 
 main .about-section section img:last-child {
     z-index: 2;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(41, 41, 41, 0.2);
+    display: flex;
+    padding: 1rem;
+}
+
+footer .footer-section {
+    margin-left: 1.2rem;
+}
+
+footer .footer-section ul {
+    list-style: none;
+}
+
+footer .footer-section ul li {
+    margin: 10px 0;
+}
+
+@media (max-width: 400px) {
+    header {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+    header nav ul li {
+        display: block;
+    }
+    main .headline .row {
+        display: block;
+    }
+    main .headline .row section {
+        height: auto;
+    }
+    main .headline .row section img {
+        margin: 0;
+    }
+    main .top-specials .special-list,
+    main .testimony .testimony-list {
+        display: block;
+        text-align: center;
+    }
+    main .about-section section img {
+        width: 200px;
+    }
+    footer {
+        display: block;
+    }
 }
