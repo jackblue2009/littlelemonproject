@@ -50,11 +50,11 @@ main .headline .row {
 
 main .headline .row section {
     width: 50%;
-    height: 10vh;
+    height: 15vh;
 }
 
 main .headline .row section:first-child {
-    padding: 3.5rem;
+    padding: 2.5rem;
 }
 
 main .headline .row section h2 {
@@ -64,6 +64,20 @@ main .headline .row section h2 {
 main .headline .row section sub,
 main .headline .row section p {
     color: #FFFFFF;
+}
+
+main .headline .row section button {
+    background-color: #F4CE14;
+    padding: 0.7rem;
+    border-radius: 20px;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main .headline .row section img {
+    margin-top: 50px;
+    border-radius: 20px;
 }
 
 main .top-specials {
@@ -109,11 +123,40 @@ main .testimony h3 {
 main .testimony .testimony-list {
     width: 70%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 main .testimony .testimony-list .test-item {
-    width: 150px;
+    width: 170px;
+    height: 170px;
     background-color: #FFFFFF;
     border: 1px solid #000;
     padding: 0.6rem;
+}
+
+main .testimony .testimony-list .test-item p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+main .about-section {
+    padding: 1rem 2rem;
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+main .about-section section {
+    width: 50%;
+    text-align: justify;
+    padding: 1rem;
+}
+
+main .about-section section img {
+    position: relative;
+}
+
+main .about-section section img:last-child {
+    z-index: 2;
 }
