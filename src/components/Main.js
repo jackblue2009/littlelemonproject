@@ -1,6 +1,7 @@
 import headlineImg from '../images/restauranfood.jpg'
 
 import Specials from './Specials';
+import Testimony from './Testimony';
 
 function Main() {
     return (
@@ -23,6 +24,7 @@ function Main() {
                 </div>
             </div>
             <Specials />
+            <Testimony />
         </main>
     );
 }
