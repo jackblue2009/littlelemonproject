@@ -1,39 +1,41 @@
 import { useState } from "react";
 
-function BookingPage() {
+function BookingPage(props) {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [numGuests, setNumGuests] = useState("");
     const [occasion, setOccasion] = useState("");
 
-    const availableTimes = [
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00",
-        "22:00"
-    ];
+    const handleChange = (e) => {
+        setDate(e);
+        props.dispatch(e);
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        props.SubmitForm(e);
+    }
+
     return (
         <div className="booking-page">
             <h2>Book A Table</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label for='res-date'>Choose Date</label>
                 <input
                     type='date'
                     id="res-date"
-                    onChange={(e) => setDate(e.target.value)}
+                    onChange={(e) => handleChange(e.target.value)}
                 />
                 <label for='res-time'>Choose Time</label>
                 <select
                     id="res-time"
-                    value='default'
+                    value={time}
                     onChange={(e) => setTime(e.target.value)}
                 >
                     <option value='default'>Choose a Time</option>
-                    { availableTimes.map((item) => {
+                    { props.availableTimes.availableTimes.map((item) => {
                         return (
-                            <option value={item}>{item}</option>
+                            <option key={item} value={item}>{item}</option>
                         );
                     }) }
                 </select>
@@ -42,13 +44,14 @@ function BookingPage() {
                     type='number'
                     placeholder='1'
                     min='1' max='10'
+                    value={numGuests}
                     id='guests'
                     onChange={(e) => setNumGuests(e.target.value)}
                 />
                 <label for='occasion'>Occasions</label>
                 <select
                     id='occation'
-                    value='default'
+                    value={occasion}
                     onChange={(e) => setOccasion(e.target.value)}
                 >
                     <option value='default'>Choose an Occasion</option>

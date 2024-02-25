@@ -120,6 +120,15 @@ main .top-specials .special-list .special-item .price {
     font-weight: bold;
 }
 
+main .top-specials .special-list .special-item button {
+    background-color: #F4CE14;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 main .testimony {
     width: 100%;
     background-color: rgba(41, 41, 41, 0.2);
@@ -196,6 +205,12 @@ main .about-section section img:last-child {
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.confirm {
+    padding: 2rem;
+    text-align: center;
+    height: 50vh;
 }
 
 footer {
