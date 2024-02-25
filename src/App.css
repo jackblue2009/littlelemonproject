@@ -175,10 +175,27 @@ main .about-section section img:last-child {
     z-index: 2;
 }
 
+.booking-page {
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    padding: 1rem;
+}
+
 .booking-page form {
     display: grid;
     max-width: 200px;
     gap: 20px;
+}
+
+.booking-page form input[type='submit'] {
+    background-color: #F4CE14;
+    color: #000;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 footer {
