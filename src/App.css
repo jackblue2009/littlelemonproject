@@ -82,7 +82,8 @@ main .headline .row section a {
 }
 
 main .headline .row section a:hover {
-    box-shadow: 5px 5px 5px 2px #c3c3c3;
+    color: #FFF;
+    background-color: #495E57;
 }
 
 main .headline .row section img {
@@ -127,6 +128,12 @@ main .top-specials .special-list .special-item button {
     border-radius: 15px;
     font-size: 1.4em;
     font-weight: bold;
+    cursor: pointer;
+}
+
+main .top-specials .special-list .special-item button:hover {
+    color: #FFF;
+    background-color: #495E57;
 }
 
 main .testimony {
@@ -197,6 +204,14 @@ main .about-section section img:last-child {
     gap: 20px;
 }
 
+.booking-page form input[type='date'],
+.booking-page form input[type='number'],
+.booking-page form select {
+    padding: 0.6rem;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
 .booking-page form input[type='submit'] {
     background-color: #F4CE14;
     color: #000;
@@ -205,6 +220,14 @@ main .about-section section img:last-child {
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-page form input[type='submit']:hover {
+    border: 2px double #000;
+    color: #FFF;
+    background-color: #495E57;
+    text-decoration: underline;
 }
 
 .confirm {
