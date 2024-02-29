@@ -223,7 +223,13 @@ main .about-section section img:last-child {
     cursor: pointer;
 }
 
-.booking-page form input[type='submit']:hover {
+.booking-page form input[type='submit']:disabled {
+    background-color: #484848;
+    color: #FFF;
+    cursor: not-allowed;
+}
+
+.booking-page form input[type='submit']:hover:not(:disabled) {
     border: 2px double #000;
     color: #FFF;
     background-color: #495E57;

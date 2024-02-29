@@ -8,7 +8,7 @@ function BookingPage(props) {
 
     const getIsFormValid = () => {
         return (
-            date && time && numGuests && occasion
+            date && time && occasion
         );
     };
 
@@ -40,7 +40,7 @@ function BookingPage(props) {
                     onChange={(e) => setTime(e.target.value)}
                     required
                 >
-                    <option value='default'>Choose a Time</option>
+                    <option value=''>Choose a Time</option>
                     { props.availableTimes.availableTimes.map((item) => {
                         return (
                             <option key={item} value={item}>{item}</option>
@@ -63,11 +63,11 @@ function BookingPage(props) {
                     onChange={(e) => setOccasion(e.target.value)}
                     required
                 >
-                    <option value='default'>Choose an Occasion</option>
+                    <option value=''>Choose an Occasion</option>
                     <option value='birthday'>Birthday</option>
                     <option value='anniversary'>Anniversary</option>
                 </select>
-                <input type='submit' value='Make Your Reservation' disable={!getIsFormValid()} />
+                <input type='submit' value='Make Your Reservation' disabled={!getIsFormValid()} />
             </form>
         </div>
     );
