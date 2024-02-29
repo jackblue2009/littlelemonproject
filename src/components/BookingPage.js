@@ -67,7 +67,7 @@ function BookingPage(props) {
                     <option value='birthday'>Birthday</option>
                     <option value='anniversary'>Anniversary</option>
                 </select>
-                <input type='submit' value='Make Your Reservation' disabled={!getIsFormValid()} />
+                <input aria-label="On Click" type='submit' value='Make Your Reservation' disabled={!getIsFormValid()} />
             </form>
         </div>
     );
