@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 'npm install'
 
-In the project directory, you can run:
+Run this command if the project directory is missing node_modules/ directory
 
 ### `npm start`
 
